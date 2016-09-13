@@ -1,0 +1,27 @@
+nrs sourcefile [options]
+
+
+EXAMPLES
+nrs input.m3u
+nrs input.m3u8 -o output.m3u8 -t genre -b
+nrs input.txt -t "album artist" -s
+
+OPTIONS
+-b      disable BOM
+-o      output playlist file
+-s      disable shuffle
+-t      tag to sort by
+-v      enable verbose output
+
+
+SUPPORTED INPUT/OUTPUT FORMATS
+m3u
+m3u8
+txt
+
+
+NOTES
+Output files are encoded in UTF-8 regardless of input (by default, with BOM).
+Regarding -s option:
+    By default, the playlist is randomized and then sorted according to artist.
+    If disabled, the playlist is not randomized, only sorted. Tracks by any given artist will be spread throughout the playlist, but remain in the same order.
