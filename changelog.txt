@@ -1,0 +1,8 @@
+2013.04.11
+    First release
+2016.09.13
+    Complete rewrite.
+    Fixed deletion of duplicate entries in playlist.
+2016.09.21
+    Fixed M3U comments being treated as unreadable files.
+    Fixed files in relative filepaths not being found.
